@@ -1,0 +1,56 @@
+<!--  Assignment 1 in {"HTML_CSS_JAVASCRIPT"} BY ["PARTH PATEL"] -->
+<!DOCTYPE html>
+<html lang="en">
+								<!--  Assignment 1 in {"HTML_CSS_JAVASCRIPT"} BY ["PARTH PATEL"] -->
+								<!--  Comment Added to understand the function or requirement of that tag -->
+
+<head>
+	<!-- charset = character set utf-8 is character encoding capable of encoding all characters on the web. Because it is the default all modern browsers will use utf-8 without being explicitly told to do so. It remains in meta data as a common good practice. -->
+	<meta charset="utf-8">
+
+	<!--  A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>DISPLAY DETAILS</title>
+
+	<!--Fetch Css File-->
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+	<!-- Input Fields to Enter Details -->
+	<div id="container">
+		<div class="input">FirstName: <input type="text" id="fname" placeholder="FirstName" /> </div>
+		<div class="input">MiddleName: <input type="text" id="mname" placeholder="MiddleName" /> </div>
+		<div class="input">LastName: <input type="text" id="lname" placeholder="LastName" /> </div>
+		<div class="input">Email: <input type="text" name="eid" id="email" placeholder="Email" pattern=".+@.+..+" required /> </div>
+		<div class="input">Password: <input type="password" name="password" id="psw" placeholder="Password" /> </div>
+		<div class="input">Gender: <input type="radio" name="gender" value="MALE" id="gender" checked />MALE <input type="radio" name="gender" 
+			value="FEMALE" id="gender" />FEMALE </div>
+		<div class="input">Hobby: <input type="CHECKBOX" name="hobby" id="hby" />TRAVELLING 
+				                  <input type="CHECKBOX" name="hobby" id="hby" />READING 
+				                  <input type="CHECKBOX" name="hobby" id="hby" />DRIVING </div>  <!--Not display in table-->
+		<div class="input">Hobbies: <textarea id="hobbies" rows="1" cols="25"> </textarea> </div>
+		<button id="entry" class="btn draw-border" align='center'>Submit</button>
+	</div>
+
+	<!-- Table to store/dispaly details -->
+	<div>
+		<table id="display">
+			<tr>
+				<th>FirstName</th>
+				<th>MiddleName</th>
+				<th>LastName</th>
+				<th>Email</th>
+				<th>Password</th>
+				<th>Gender</th>
+				<th>Hobby</th>
+				<th>Hobbies</th>
+			</tr>
+		</table>
+	</div>
+	<!--Fetch JavaScript File-->
+	<script type="text/javascript" src="script.js"></script>
+	
+</body>
+</html>
